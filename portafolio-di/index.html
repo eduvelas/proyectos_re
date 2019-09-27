@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+		<link rel="stylesheet" href="css/estilos.css">
+		<title>Portafolio Dinamico</title>
+	</head>
+	<body>
+		<div class="contenedor">
+			<header>
+				<div class="logo">
+					<h1>Pedro</h1>
+					<p>Desarrollo</p>
+				</div>
+				<form action="">
+					<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+				</form>
+				<div class="categorias" id="categorias">
+					<a href="#" class="activo">Todos</a>
+					<a href="#">Naturaleza</a>
+					<a href="#">Ciudades</a>
+					<a href="#">Personas</a>
+					<a href="#">Animales</a>
+				</div>
+			</header>
+
+			<section class="grid" id="grid">
+
+				<div class="item" 
+					data-categoria="ciudades" 
+					data-etiquetas="ciudades autos carros calles"
+					data-descripcion="1-. Lorem ipsum dolor sit amet,"
+				>
+					<div class="item-con">
+						<img src="img/ciudad1.png">
+					</div>
+				</div>
+
+				<div class="item" 
+					data-categoria="personas" 
+					data-etiquetas="personas mujeres"
+					data-descripcion="2-. Lorem ipsum dolor sit amet,"
+				>
+					<div class="item-con">
+						<img src="img/persona1.png">
+					</div>
+				</div>
+
+				<div class="item" 
+					data-categoria="ciudades" 
+					data-etiquetas="ciudades edificios carros playa"
+					data-descripcion="3-. Lorem ipsum dolor sit amet,"
+				>
+					<div class="item-con">
+						<img src="img/ciudad2.png">
+					</div>
+				</div>
+
+				<div class="item" 
+					data-categoria="animales" 
+					data-etiquetas=" animales leon"
+					data-descripcion="4-. Lorem ipsum dolor sit amet,"
+				>
+					<div class="item-con">
+						<img src="img/animal1.png">
+					</div>
+				</div>
+
+				<div class="item" 
+					data-categoria="animales" 
+					data-etiquetas="animales oso panda"
+					data-descripcion="5-. Lorem ipsum dolor sit amet,"
+				>
+					<div class="item-con">
+						<img src="img/animal2.png">
+					</div>
+				</div>
+
+				<div class="item" 
+					data-categoria="naturaleza" 
+					data-etiquetas="naturaleza hojas"
+					data-descripcion="6-. Lorem ipsum dolor sit amet,"
+				>
+					<div class="item-con">
+						<img src="img/naturaleza1.png">
+					</div>
+				</div>
+
+				<div class="item" 
+					data-categoria="paisaje" 
+					data-etiquetas="paisaje montañas playa"
+					data-descripcion="Lorem ipsum dolor sit amet,"
+				>
+					<div class="item-con">
+						<img src="img/paisaje1.png">
+					</div>
+				</div>
+
+				<div class="item" 
+					data-categoria="paisaje" 
+					data-etiquetas="paisaje montañas carros nubes naturaleza"
+					data-descripcion="Lorem ipsum dolor sit amet,"
+				>
+					<div class="item-con">
+						<img src="img/paisaje2.png">
+					</div>
+				</div>
+
+				<div class="item" 
+					data-categoria="personas" 
+					data-etiquetas="personas mujer"
+					data-descripcion="Lorem ipsum dolor sit amet,"
+				>
+					<div class="item-con">
+						<img src="img/persona2.png">
+					</div>
+				</div>
+			</section>
+
+			<section class="overlay" id="overlay">
+				<div class="contenedo-img">
+					<button id="btn-cerrar-papup"><i class="fas fa-times"></i></button>
+					<img src="">
+					<p class="descripcion"></p>
+				</div>	
+			</section>
+
+			<footer class="contenedor">
+				<div class="redes-sociales">
+					<div class="contenedor-icono">
+						<a href="#" target=".blank" class="icono-t">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</div>
+					<div class="contenedor-icono">
+						<a href="#" target=".blank" class="icono-f">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</div>
+					<div class="contenedor-icono">
+						<a href="#" target=".blank" class="icono-i">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+				<div class="creado-por">
+					<p>Sitio diseñado por Pedro xdxxd</p>
+				</div>
+			</footer>
+		</div>
+
+		<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+		<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

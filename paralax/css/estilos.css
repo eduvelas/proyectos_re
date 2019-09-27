@@ -1,0 +1,231 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--purple-dark: #178312;
+	--purple-medium: #33032d;
+	--purple-light: #531253;
+	--gray-light: #eaeaea;
+	--white: #f4fffd;
+}
+body {
+	font-size: 20px;
+	font-family: Arial; 
+}
+/*Header*/
+.contenido-header {
+	width: 100%;
+	height: 100vh;
+	background-image: url(https://mobalytics.gg/wp-content/uploads/2018/08/Minions_2018_April_Fools_promo_01-1920x1080.jpg);
+	background-attachment: fixed;
+	background-size: cover; 
+
+}
+.contenido-header .fondo {
+	width: 0%;
+	height: 100%;
+	max-width: 100%;
+	background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ebdf6bc8-6165-4fa6-a6eb-1aeda62b0c49/dcmpg04-8af418c7-7d7e-4372-a65c-0d71d0de2deb.png/v1/fill/w_1174,h_681,strp/metal_slug_weapons__png__by_aukaicraftlv_dcmpg04-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzQxIiwicGF0aCI6IlwvZlwvZWJkZjZiYzgtNjE2NS00ZmE2LWE2ZWItMWFlZGE2MmIwYzQ5XC9kY21wZzA0LThhZjQxOGM3LTdkN2UtNDM3Mi1hNjVjLTBkNzFkMGRlMmRlYi5wbmciLCJ3aWR0aCI6Ijw9MTI3NyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.8tJVbMJZU5pf8IhcY4_l2-k3hBYNigvSzXxa2WEewQ4);
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contenido-header .texto {
+	width: calc(100vw - 20px);
+	height: 100vh;
+	font-size: 90px;
+	font-weight: 400;
+	font-family:  Arial;
+	font-style: italic;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: 	#FFFF;
+}
+/*nav*/
+.menu {
+	background-color: var(--purple-medium);
+	width: 100%;
+	position: sticky;
+	top: 0;	
+	padding: 5px;
+	z-index: 999;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-family: serif;
+	font-style: italic;
+	margin-bottom: 60px;
+}
+.menu a {
+	display: inline-block;
+	padding: 10px 30px;
+	font-size: 26px;
+	background-color: var(--purple-medium);
+	margin: 0 10px;
+	transition: .5s ease all;
+	color: var(--gray-light);
+	text-decoration: none;
+}
+.menu a:hover {
+	transform: translateY(18px);
+	background-color: var(--purple-light);
+
+}
+/*nosotros*/
+.nosotros {
+	margin-bottom: 60px;
+}
+.subti {
+	font-size: 20px;
+	color: var(--purple-dark);
+	font-family: serif;
+	font-weight: 700;
+	z-index: 2;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.subti span {
+	background-color: var(--gray-light);
+	padding: 0 15px;
+	z-index: 99;
+	position: relative;
+}
+.subti::after {
+	content: "";
+	display: inline-block;
+	height: 2px;
+	width: 100%;
+	background: var(--purple-dark);
+	position: relative;
+	top: -29px;
+	z-index: 1;
+}
+.nosotros .titulo {
+	width: 70%;
+	font-size: 44px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.nosotros .enlace {
+	display: inline-block;
+	margin-top: 40px;
+	color: var(--purple-light);
+	font-weight: 700;
+	border-bottom: 1px solid trasparent;
+	transition: .3s ease all;
+}
+.nosotros .enlace:hover {
+	text-decoration: none;
+	letter-spacing: 3px;
+	border-bottom: 1px solid var(--purple-light);
+}
+
+/*productos*/
+.productos {
+	background: var(--gray-light);
+	padding: 20px;
+	margin-bottom: 60px;
+}
+.productos .titulo {
+	width: 70%;
+	font-size: 44px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.productos .producto {
+ position: relative;
+ width: 100%;	
+}
+.productos .over {
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: var(--purple-light);
+	overflow: hidden;
+	transition: .5s ease;
+}
+.productos .producto:hover .over {
+	width: 100%;
+	opacity: .8;
+}
+.productos .producto .overtext {
+	top: 35%;
+	left: 35%;
+	position: absolute;
+	white-space: nowrap;
+	color: var(--white);
+	font-size: 18px;
+	transform: traslate(-50, -50%);
+	overflow: hidden;
+	border-top: 1px solid #FFFF;
+	border-bottom: 1px solid #FFFF;
+}
+
+.productos .btn-productos {
+	background-color: var(--purple-light);
+	color: #FFF;
+	padding: 7px 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+	border: 2px solid transparent;
+	tansition: .3 ease;
+}
+.productos .btn-productos:hover {
+	background-color: transparent;
+	border: 2px solid var(--purple-light);
+	color: var(--purple-light);
+}
+
+/*separador*/
+.separador {
+	width: 100%;
+	height: 250px;
+	background-image: url(https://s3.dexerto.com/thumbnails/_thumbnailLarge/League-of-Legends-Patch-8.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-bottom: 50px;
+}
+
+.separador p {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-family: serif;
+	padding: 10px;
+}
+.imgen {
+	width: 100%;
+}
+/*acercade*/
+.acerca-de {
+	margin-bottom: 60px;
+}
+
+/*galeria*/
+.galeria {
+	margin-bottom: 60px;
+
+}
+.galeria img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.contacto {
+	margin-bottom: 60px;
+}
+.icont {
+	width: 50px;
+}
